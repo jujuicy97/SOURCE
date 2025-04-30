@@ -1,106 +1,191 @@
+<!--tag < class < id 순으로 우선순위가 높음. 오버라이팅 조심-->
+
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>INDIGO</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="home">
-        <nav class="bar">
-            <h1>INDIGO</h1>
-            <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
-            <ul>
-                <li><a href="#"></a>HOME</li>
-                <li><a href="#"></a>WE ARE</li>
-                <li><a href="#"></a>WORK</li>
-                <li><a href="#"></a>BLOG</li>
-                <li><a href="#"></a>CONTACT US</li>
-            </ul>
-        </nav>
+      <nav>
+        <h1>INDIGO</h1>
+        <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">WE ARE</a></li>
+          <li><a href="#work">WORK</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+      </nav>
     </header>
     <section id="about">
-        <article class="weare">
-            <h2>WE ARE</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ipsum! Accusamus rerum ducimus esse fuga nihil blanditiis nam mollitia.</p>
-        </article>
-        <ul class="icon">
-            <li>
-                <img src="./images/promo01.png" alt="HOME">
-                <h3>HOME</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, nisi?</p>
-            </li>
-            <li>
-                <img src="./images/promo02.png" alt="WE ARE이미지">
-                <h3>WE ARE</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, nisi?</p>
-            </li>
-            <li>
-                <img src="./images/promo03.png" alt="WORK이미지">
-                <h3>WORK</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, nisi?</p>
-            </li>
-            <li>
-                <img src="./images/promo04.png" alt="BLOG이미지">
-                <h3>BLOG</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, nisi?</p>
-            </li>
-        </ul>
+      <article class="weare">
+        <h2>WE ARE</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ipsum!
+          Accusamus rerum ducimus esse fuga nihil blanditiis nam mollitia.
+        </p>
+      </article>
+      <ul class="icon">
+        <li>
+          <img src="./images/promo01.png" alt="HOME" />
+          <h3>HOME</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, nisi?
+          </p>
+        </li>
+        <li>
+          <img src="./images/promo02.png" alt="WE ARE이미지" />
+          <h3>WE ARE</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, nisi?
+          </p>
+        </li>
+        <li>
+          <img src="./images/promo03.png" alt="WORK이미지" />
+          <h3>WORK</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, nisi?
+          </p>
+        </li>
+        <li>
+          <img src="./images/promo04.png" alt="BLOG이미지" />
+          <h3>BLOG</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, nisi?
+          </p>
+        </li>
+      </ul>
     </section>
     <section id="work">
-        <h2>WORK</h2>
-        <article>
-            <a href="#">
-                <p>이미지1 <br> WEB/PRINT</p>
-            </a>
-            <a href="#">
-                <p>이미지2 <br> WEB/PRINT</p>
-            </a>
-            <a href="#">
-                <p>이미지3 <br> WEB/PRINT</p>
-            </a>
-            <a href="#">
-                <p>이미지4 <br> WEB/PRINT</p>
-            </a>
-            <a href="#">
-                <p>이미지5 <br> WEB/PRINT</p>
-            </a>
-            <a href="#">
-                <p>이미지6 <br> WEB/PRINT</p>
-            </a>
-            <a href="#">
-                <p>이미지7 <br> WEB/PRINT</p>
-            </a>
-            <a href="#">
-                <p>이미지8 <br> WEB/PRINT</p>
-            </a>
-        </article>
+      <h2>WORK</h2>
+      <article>
+        <a href="#">
+          <p>
+            이미지1 <br />
+            WEB/PRINT
+          </p>
+        </a>
+        <a href="#">
+          <p>
+            이미지2 <br />
+            WEB/PRINT
+          </p>
+        </a>
+        <a href="#">
+          <p>
+            이미지3 <br />
+            WEB/PRINT
+          </p>
+        </a>
+        <a href="#">
+          <p>
+            이미지4 <br />
+            WEB/PRINT
+          </p>
+        </a>
+        <a href="#">
+          <p>
+            이미지5 <br />
+            WEB/PRINT
+          </p>
+        </a>
+        <a href="#">
+          <p>
+            이미지6 <br />
+            WEB/PRINT
+          </p>
+        </a>
+        <a href="#">
+          <p>
+            이미지7 <br />
+            WEB/PRINT
+          </p>
+        </a>
+        <a href="#">
+          <p>
+            이미지8 <br />
+            WEB/PRINT
+          </p>
+        </a>
+      </article>
     </section>
+    <hr />
     <section id="blog">
-        <h2>BLOG</h2>
-        <ul class="card">
-            <li>
-                <img src="./images/blog01.jpg" alt="이미지1">
-                <h3>OCT 30, 2016</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-                <img src="./images/blog02.jpg" alt="이미지2">
-                <h3>OCT 30, 2016</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-                <img src="./images/blog03.jpg" alt="이미지3">
-                <h3>OCT 30, 2016</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-        </ul>
+      <h2>BLOG</h2>
+      <ul class="card">
+        <li>
+          <img src="./images/blog01.jpg" alt="블로그 이미지1" />
+          <p>OCT 30, 2016</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </li>
+        <li>
+          <img src="./images/blog02.jpg" alt="블로그 이미지2" />
+          <p>OCT 30, 2016</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </li>
+        <li>
+          <img src="./images/blog03.jpg" alt="블로그 이미지3" />
+          <p>OCT 30, 2016</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </li>
+      </ul>
     </section>
-</body>
-
+    <!--사용자 입력창 만들기-->
+    <section id="contact">
+      <h2>CONTACT</h2>
+      <form>
+        <div class="form-box">
+          <div class="left">
+            <label>
+              <span>name</span>
+              <input type="name" />
+            </label>
+            <label>
+              <span>Phone</span>
+              <input type="phone" />
+            </label>
+            <label>
+              <span>Email Address</span>
+              <input type="email" />
+            </label>
+          </div>
+          <div class="right">
+            <label>
+              <span>Message</span>
+              <textarea></textarea>
+              <!--여러줄 작성 가능-->
+            </label>
+          </div>
+        </div>
+        <button>SEND MESSAGE</button>
+      </form>
+    </section>
+    <footer>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101354.83069350843!2d126.70733869726564!3d37.452729899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b622d2926541b%3A0x54929c4836c6c1c8!2z6rK967O16raB!5e0!3m2!1sko!2skr!4v1745979301653!5m2!1sko!2skr"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <p>ⓒ copyright 2025</p>
+    </footer>
+  </body>
 </html>

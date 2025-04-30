@@ -12,16 +12,26 @@ $main-color: #3f51b5;
     }
 }
 
+
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: Paperlogy, sans-serif;
     color: $main-color;
 }
 
+/*****header*****/
 header{
     height: 80vh;
     width: 100%;
     background-image: url(../images/slide01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    @include tablet{
+        height: 50vh;
+    }
 /*사진 반응형으로 만드는 속성*/
     background-position: center;
 
@@ -47,6 +57,7 @@ header{
             position: absolute;
             top: 80px;
             left: 0;
+            cursor: pointer;
             li{
                 width: 100%;
                 background-color: $main-color;
@@ -163,10 +174,10 @@ section#work{
         @for $i from 1 through 8{
         &:nth-child(#{$i}){
         background-image: url(../images/work0#{$i}.jpg);
+         }
       }
       &:hover p{
         display: block;
-      }
     }
     p{
         display: none;
@@ -180,19 +191,127 @@ section#work{
 }
 }
 
+/*blog*/
+hr{
+    width: 20px;
+    margin: 2rem auto;
+}
 section#blog{
-    margin: 2rem;
-    text-align: left;
-    line-height: 1.5;
+    width: 80%;
+    margin: 3rem auto;
+    /*가운데 정렬 설정*/
+    @include flex(center, center, column);
+    @include tablet{
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+    }
     h2{
         text-align: center;
         font-size: 2rem;
-        letter-spacing: 5px;
-        margin: 3rem;
-        @include tablet{
-            text-align: left;
-            width: 80%;
-            margin: 0 auto;
+        margin: 2rem;
         }
+    ul{
+        @include tablet{
+            @include flex(space-around, center, row);
+            gap: 1rem;
+        }
+        li{
+            img{
+                width: 100%;
+            }
+            p{
+                &:nth-of-type(1){
+                font-size: 0.5rem;
+                }
+                &:nth-of-type(2){
+                 font-size: 0.8rem;
+                 margin: 1rem 0;
+                }
+            }
+        }
+    }
+}
+    
+/*contact*/
+section#contact{
+    @include tablet{
+        @include flex(center, flex-start, row);
+        width: 80%;
+        margin: 3rem auto;
+    }
+    h2{
+        font-size: 2rem;
+        text-align: center;
+        margin: 2rem;
+    }
+    form{
+        width: 80%;
+        margin: 1rem auto;
+        .form-box{
+            @include tablet{
+                @include flex(center, flex-start, row);
+                gap: 1rem;
+            }
+            div{
+                width: 100%;
+                @include tablet{
+                    width: 50%;
+                }
+            }
+        }
+    }
+    label{
+        display: block;
+        position: relative;
+        height: 2rem;
+        margin: 2rem 0;
+        span{
+            position: absolute;
+            top: 0;
+            left: 5px;
+/*라벨 이름 맨 앞으로 가져오기*/
+            z-index: 3;
+        }
+        input, textarea{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-bottom: 1px solid $main-color;
+        }
+        textarea{
+            height: 500%;
+        }
+    }
+    button{
+        margin-top: 200px;
+        background-color: $main-color;
+        color: #fff;
+        border: none;
+        outline: none;
+        padding: 20px;
+/*오른쪽에 있는 여백을 왼쪽으로 옮겨주는 설정*/
+        margin-left: auto;
+        display: block;
+        width: 40%;
+        cursor: pointer;
+        @include tablet{
+            margin-top: 0;
+        }
+        &:hover{
+            background-color: darken($main-color, 30%);
+        }
+    }
+}
+
+/*footer*/
+footer{
+    p{
+        // background-color: $main-color;
+        padding: 2rem 0;
+        text-align: center;
     }
 }
